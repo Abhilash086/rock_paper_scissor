@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000000;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+.container {
+    margin: 20px 0;
+}
+
+p {
+    margin: 20px 0;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 48px;
+}
+
+.btn {
+    background: #000000;
+    color: #fff;
+    font-size: 86px;
+    padding: 30px;
+    margin-right: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn:hover {
+    background: #333;
+    border-color: #ddd;
+}
+
+button {
+    background: #d70000;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background: #b50000;
+}
+
+span {
+    font-size: 40px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .btn {
+        font-size: 60px; /* Adjust button size on smaller screens */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px; /* Adjust header size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button text size */
+        padding: 8px 20px;
+    }
+
+    span {
+        font-size: 30px; /* Adjust span text size */
+    }
+}
+@media (max-width: 460px) {
+    .btn {
+        font-size: 40px; /* Adjust button size on smaller screens */
+        padding: 20px;
+    }
+
+    h1 {
+        margin: 10% 0;
+        font-size: 26px; /* Adjust header size */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button text size */
+        padding: 8px 20px;
+    }
+
+    span {
+        font-size: 30px; /* Adjust span text size */
+    }
+}
+
