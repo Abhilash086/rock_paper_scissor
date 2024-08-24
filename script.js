@@ -11,6 +11,21 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 };
 let savedWinner = localStorage.getItem("winner") || "";
 let savedChoice = localStorage.getItem("choice") || "";
+let isAutoPlay = false;
+let intervalID;
+
+function autoPlay(){
+    if(!isAutoPlay){
+        intervalID = setInterval(function(){
+            let user = computerChoice();
+            checkResult(user);
+        },1000);
+        isAutoPlay = true;
+    }else{
+        clearInterval(intervalID);
+        isAutoPlay = false;
+    }
+}
 
 // Update score and display states
 updateScoreElement();
